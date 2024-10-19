@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ff6f61;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .quote-section {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+        }
+
+        .quote {
+            font-size: 1.8rem;
+            color: #2f3640;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+        }
+
+        .timeline-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid #ff6f61;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -17px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -17px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item::before {
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="core_team_members.html">Core Team Members</a></li>
+            <li><a href="memory_lane.html" class="active">Memory Lane</a></li>
+            <li><a href="childhood_friends.html">Childhood Friends</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Memory Lane</h1>
+        
+        <div class="quote-section">
+            <div class="quote">"Life is a collection of moments, frozen in photographs, each telling a story of who we were, who we are, and who we're becoming."</div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp1.jpg" alt="Memory 1">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp2.jpg" alt="Memory 2">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp3.jpg" alt="Memory 3">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp4.jpg" alt="Memory 4">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp5.jpg" alt="Memory 5">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp6.jpeg" alt="Memory 6">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp7.jpeg" alt="Memory 7">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp8.jpeg" alt="Memory 8">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp9.jpeg" alt="Memory 9">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp10.jpeg" alt="Memory 10">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp11.jpeg" alt="Memory 11">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp12.jpeg" alt="Memory 12">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp13.jpeg" alt="Memory 13">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp14.jpeg" alt="Memory 14">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp15.jpeg" alt="Memory 15">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp16.jpeg" alt="Memory 16">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp17.jpeg" alt="Memory 17">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/cp18.jpeg" alt="Memory 18">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

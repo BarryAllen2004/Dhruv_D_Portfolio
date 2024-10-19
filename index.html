@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #ff6f61 0%, #ff8b94 100%);
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .hero-section h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            color: #2f3640;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .quick-link {
+            padding: 12px 25px;
+            background-color: white;
+            color: #ff6f61;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .quick-link:hover {
+            background-color: #ff6f61;
+            color: white;
+        }
+
+        .celebration-banner {
+            position: relative;
+            overflow: hidden;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .celebration-text {
+            font-size: 1.2rem;
+            color: #2f3640;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="core_team_members.html">Core Team Members</a></li>
+            <li><a href="memory_lane.html">Memory Lane</a></li>
+            <li><a href="childhood_friends.html">Childhood Friends</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="hero-section">
+            <h1>🎉 Welcome to Dhruv's Special Birthday Page! 🎂</h1>
+            <div class="hero-text">
+                Celebrating life's beautiful moments and cherished memories together.
+            </div>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card" data-href="memory_lane.html">
+                <div class="feature-icon">📸</div>
+                <h2 class="feature-title">Memory Lane</h2>
+                <p class="feature-description">Take a journey through time with a collection of precious moments, from childhood adventures to recent celebrations.</p>
+            </div>
+            <div class="feature-card" data-href="core_team_members.html">
+                <div class="feature-icon">👥</div>
+                <h2 class="feature-title">Core Team Members</h2>
+                <p class="feature-description">Meet the amazing people who collaborated with Dhruv through his life's journey.</p>
+            </div>
+            <div class="feature-card" data-href="resume.html">
+                <div class="feature-icon">🎓</div>
+                <h2 class="feature-title">Resume</h2>
+                <p class="feature-description">Explore Dhruv's achievements, experiences, and the path that has shaped who he is today.</p>
+            </div>
+            <div class="feature-card" data-href="childhood_friends.html">
+                <div class="feature-icon">🤝</div>
+                <h2 class="feature-title">Childhood Friends</h2>
+                <p class="feature-description">A view of the wonderful friends who've shared countless laughs and unforgettable moments.</p>
+            </div>
+        </div>
+
+        <div class="celebration-banner">
+            <div class="celebration-text">
+                "Here's to celebrating not just a birthday, but a lifetime of beautiful memories, lasting friendships, and incredible achievements. Each page of this website holds a special story, a cherished moment, and a piece of a journey that continues to unfold."
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('click', function() {
+                window.location.href = this.getAttribute('data-href');
+            });
+        });
+    </script>
+</body>
+</html>

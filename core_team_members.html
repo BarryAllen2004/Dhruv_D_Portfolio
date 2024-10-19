@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Team Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for enlarged image overlay */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Show on top */
+        }
+
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="core_team_members.html" class="active">Core Team Members</a></li>
+            <li><a href="memory_lane.html">Memory Lane</a></li>
+            <li><a href="childhood_friends.html">Childhood Friends</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Core Team Members</h1>
+        <div class="core-members">
+            <div class="member">
+                <img src="images/ct1.jpg" alt="Core Team Member 1" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct2.jpg" alt="Core Team Member 2" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct3.jpg" alt="Core Team Member 3" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct4.jpg" alt="Core Team Member 4" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct5.jpg" alt="Core Team Member 5" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct6.jpg" alt="Core Team Member 6" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct7.jpg" alt="Core Team Member 7" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct8.jpg" alt="Core Team Member 8" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct9.jpg" alt="Core Team Member 9" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct10.jpg" alt="Core Team Member 10" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct11.jpg" alt="Core Team Member 11" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct12.jpg" alt="Core Team Member 12" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct13.jpg" alt="Core Team Member 13" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct14.jpg" alt="Core Team Member 14" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct15.jpg" alt="Core Team Member 15" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct16.jpg" alt="Core Team Member 16" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct17.jpg" alt="Core Team Member 17" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct18.jpg" alt="Core Team Member 18" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct19.jpg" alt="Core Team Member 19" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct20.jpg" alt="Core Team Member 20" onclick="openModal(this)">
+            </div>
+            <div class="member">
+                <img src="images/ct21.jpg" alt="Core Team Member 21" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct22.jpeg" alt="Core Team Member 22" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct23.jpeg" alt="Core Team Member 23" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct24.jpeg" alt="Core Team Member 24" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct25.jpeg" alt="Core Team Member 25" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct26.jpeg" alt="Core Team Member 26" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct27.jpeg" alt="Core Team Member 27" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct28.jpeg" alt="Core Team Member 28" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct29.jpeg" alt="Core Team Member 29" onclick="openModal(this)">
+            </div>
+			<div class="member">
+                <img src="images/ct30.jpeg" alt="Core Team Member 30" onclick="openModal(this)">
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay" onclick="closeModal()">
+            <img id="overlayImage" src="" alt="Enlarged Image">
+        </div>
+    </div>
+
+    <script>
+        function openModal(image) {
+            const overlay = document.getElementById("overlay");
+            const overlayImage = document.getElementById("overlayImage");
+            overlayImage.src = image.src; // Set the src of the overlay image to the clicked image
+            overlay.style.display = "flex"; // Show the overlay
+        }
+
+        function closeModal() {
+            const overlay = document.getElementById("overlay");
+            overlay.style.display = "none"; // Hide the overlay
+        }
+    </script>
+</body>
+</html>
+

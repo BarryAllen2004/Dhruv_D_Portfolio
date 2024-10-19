@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childhood Friends</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles here or in your styles.css file */
+        .memory-photos {
+            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next line */
+            justify-content: center; /* Center the images */
+            gap: 10px; /* Space between images */
+        }
+
+        .memory-photos img {
+            width: 48%; /* 2 images in a row (adjust for spacing) */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure images fit within their containers */
+            max-height: 300px; /* Set a maximum height */
+            border: 2px solid black; /* Add a small black border */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        /* Optional: Ensure images are responsive on smaller screens */
+        @media (max-width: 768px) {
+            .memory-photos img {
+                width: 100%; /* 1 image in a row on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="core_team_members.html">Core Team Members</a></li>
+            <li><a href="memory_lane.html">Memory Lane</a></li>
+            <li><a href="childhood_friends.html" class="active">Childhood Friends</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Childhood Friends</h1>
+        <div class="memory-photos">
+            <img src="images/cf1.png" alt="Childhood Friend 1">
+            <img src="images/cf2.jpg" alt="Childhood Friend 2">
+            <img src="images/cf3.jpg" alt="Childhood Friend 3">
+            <img src="images/cf4.png" alt="Childhood Friend 4">
+            <img src="images/cf5.jpg" alt="Childhood Friend 5">
+            <img src="images/cf6.jpg" alt="Childhood Friend 6">
+            <img src="images/cf7.jpg" alt="Childhood Friend 7">
+            <img src="images/cf8.jpg" alt="Childhood Friend 8">
+            <img src="images/cf9.jpg" alt="Childhood Friend 9">
+        </div>
+    </div>
+</body>
+</html>
